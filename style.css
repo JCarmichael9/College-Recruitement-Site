@@ -10,24 +10,37 @@
   width: 100vw;
   height: 100vh;
 }
-.trans-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(97, 97, 97);
-    opacity: 0.3;
-    height: 100vh;
-    width: 100vw;
+
+.trans-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(97, 97, 97);
+  opacity: 0.3;
+  height: 100vh;
+  width: 100vw;
 }
 
 .size {
   width: 100vw;
   overflow-x: hidden;
+  background-image: url(imgs/bg.jpg);
 }
+
+body {
+  background-image: url(imgs/bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
 #myVideo {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .introTxt {
@@ -44,7 +57,7 @@
 
 }
 
-.pic1{
+.pic1 {
   rotate: -25deg;
 }
 
@@ -62,10 +75,12 @@
     transform: scale(0.9);
     opacity: 0;
   }
+
   60% {
     transform: scale(1.1);
     opacity: 1;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -73,7 +88,7 @@
 }
 
 .bbh {
-  height: 67vh;
+  height: 100vh;
 }
 
 .bo {
@@ -87,7 +102,8 @@
   font-family: "campus-mn", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.8rem; /* default size for large screens */
+  font-size: 1.8rem;
+  /* default size for large screens */
 }
 
 /* Medium screens and smaller */
@@ -102,4 +118,18 @@
   .UDFont {
     font-size: 1.4rem;
   }
+}
+
+.height {
+  height: 100vh;
+}
+
+.space {
+  height: 50vh;
+}
+
+.bgBlue {
+  background-color: #00539F;
+  border: #00539F 1px solid;
+  border-radius: 10px;
 }
