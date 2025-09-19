@@ -141,7 +141,7 @@ body {
 }
 
 .bgWhite2 {
-  background-color: white;
+  background-color: #00539F;
   height: 140vh;
 }
 
@@ -155,8 +155,5 @@ ul.centered-list {
   text-align: center;
   padding-left: 0;
 }
-
-
-
 
 
