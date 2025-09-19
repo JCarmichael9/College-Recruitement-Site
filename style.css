@@ -140,6 +140,11 @@ body {
   height: 100vh;
 }
 
+.bgWhite2 {
+  background-color: white;
+  height: 140vh;
+}
+
 .bgGray {
   background-color: gray;
   border-radius: 10px;
@@ -150,3 +155,8 @@ ul.centered-list {
   text-align: center;
   padding-left: 0;
 }
+
+
+
+
+
