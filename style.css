@@ -164,7 +164,7 @@ ul.centered-list {
 
 .alumni {
   border-radius: 50%;
-  height: 40vh;
+  max-height: 30vh;
 }
 
 .pplStuff {
@@ -175,4 +175,15 @@ ul.centered-list {
 .bgWhiteChart {
   background-color: white;
   min-height: 50vh;
+}
+
+.bgWhiteAlum {
+  background-color: #00539F;
+  min-height: 80vh;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: white;
 }
