@@ -137,12 +137,12 @@ body {
 
 .bgWhite {
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .bgWhite2 {
   background-color: #00539F;
-  height: 140vh;
+  min-height: 100vh;
 }
 
 .bgGray {
@@ -157,12 +157,22 @@ ul.centered-list {
 }
 
 .chart {
-  width: 50vw;
+  min-height: 30vh;
   border: 5px #00539F solid;
   border-radius: 10px;
 }
 
 .alumni {
   border-radius: 50%;
-  height: 10vh;
+  height: 40vh;
+}
+
+.pplStuff {
+  background-color: white;
+  border-radius: 50px;
+}
+
+.bgWhiteChart {
+  background-color: white;
+  min-height: 50vh;
 }
