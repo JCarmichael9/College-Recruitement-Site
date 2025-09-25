@@ -194,11 +194,102 @@ hr {
   background-color: white;
 }
 
+.alumLine {
+  height: 3px;
+  border: none;
+  background-color: #00539F;
+}
+
 .card {
   border: 5px solid white;
   border-radius: 40px;
+  height: 100%; 
+  position: relative; 
+  overflow: hidden; 
+  min-height: 400px; 
 }
+
 
 .cardImg {
   border-radius: 40px;
+}
+
+.blu {
+  color: #00539F;
+}
+
+.topicTitle {
+  font-size: 6rem;
+}
+
+/* Medium screens and smaller */
+@media (max-width: 991.98px) {
+  .topicTitle {
+    font-size: 4rem;
+  }
+}
+
+/* Small screens and smaller */
+@media (max-width: 575.98px) {
+  .topicTitle {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+/* card flip css*/
+.card {
+  width: 100%;
+  height: 600px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.card-back {
+  background-color: white;
+  color: #00539F;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
 }
