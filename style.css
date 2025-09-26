@@ -234,6 +234,20 @@ hr {
   }
 }
 
+.card-back {
+  font-size: 2rem;
+}
+@media (max-width:990px) {
+  .card-back {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:575px) {
+  .card-back {
+    font-size: 0.5rem;
+  }
+}
 
 
 
@@ -286,7 +300,6 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   box-sizing: border-box;
