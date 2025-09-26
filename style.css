@@ -222,15 +222,13 @@ hr {
   font-size: 6rem;
 }
 
-/* Medium screens and smaller */
-@media (max-width: 991.98px) {
+@media (max-width:990px) {
   .topicTitle {
     font-size: 4rem;
   }
 }
 
-/* Small screens and smaller */
-@media (max-width: 575.98px) {
+@media (max-width:575px) {
   .topicTitle {
     font-size: 2rem;
   }
@@ -241,7 +239,7 @@ hr {
 
 
 
-/* card flip css*/
+/* card flip css used chatgpt to help with the some small issues with the stuff under this */
 .card {
   width: 100%;
   height: 600px;
@@ -292,4 +290,52 @@ hr {
   font-weight: bold;
   text-align: center;
   box-sizing: border-box;
+}
+
+.ud-footer {
+  background-color: #033b6e;  
+  color: #FFD200;          
+}
+
+.ud-footer h6 {
+  color: #FFD200;         
+}
+.ud-footer p, 
+.ud-footer i {
+  color: white;           
+}
+
+.ud-footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2); 
+  color: #FFD200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar .nav-link {
+  color: white !important;          
+  position: relative;               
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #FFD200;              
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;                      
+}
+
+.navbar .nav-link:hover {
+  color: #FFD200 !important;        /
 }
