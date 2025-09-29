@@ -235,17 +235,17 @@ hr {
 }
 
 .card-back {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 @media (max-width:990px) {
   .card-back {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width:575px) {
   .card-back {
-    font-size: 0.5rem;
+    font-size: 1.3rem;
   }
 }
 
